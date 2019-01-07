@@ -1,6 +1,6 @@
 package com.julius.field;
 
-public class Position implements IPosition{
+ class Position implements IPosition{
 
     private int xPos;
     private int yPos;

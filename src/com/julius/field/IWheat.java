@@ -1,4 +1,4 @@
 package com.julius.field;
 
-public interface IWheat {
+ public interface IWheat {
 }

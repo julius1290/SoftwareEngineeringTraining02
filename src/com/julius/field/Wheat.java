@@ -1,5 +1,6 @@
 package com.julius.field;
 
-public class Wheat {
+  class Wheat {
     int numberOfGrains;
+    Position position;
 }

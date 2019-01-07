@@ -1,4 +1,4 @@
 package com.julius.field;
 
-public class Field {
+ class Field {
 }
