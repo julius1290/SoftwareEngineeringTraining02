@@ -1,4 +1,8 @@
 package com.julius.harvester;
 
-public interface ILamps {
+interface ILamps {
+
+    void turnOn();
+    void turnOff();
+    void getIsLampOn();
 }
