@@ -1,4 +1,4 @@
 package com.julius.harvester;
 
-public class Cabine {
+public class Cabin {
 }

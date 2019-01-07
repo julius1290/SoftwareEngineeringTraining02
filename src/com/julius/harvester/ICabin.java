@@ -1,4 +1,4 @@
 package com.julius.harvester;
 
-public interface ICabine {
+public interface ICabin {
 }
