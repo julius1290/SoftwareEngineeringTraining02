@@ -1,6 +1,6 @@
 package com.julius.harvester;
 
 public interface IDriver {
-    void getInCabin();
-    void leaveCabin();
+    void getInCabin(Cabin cabin);
+    void leaveCabin(Cabin cabin);
 }

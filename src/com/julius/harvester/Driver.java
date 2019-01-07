@@ -6,12 +6,14 @@ public class Driver implements IDriver{
     boolean isBusy;
 
     @Override
-    public void getInCabin() {
-
+    public void getInCabin(Cabin cabin) {
+        isBusy = true;
+        cabin.isOccupied = true;
     }
 
     @Override
-    public void leaveCabin() {
-
+    public void leaveCabin(Cabin cabin) {
+        isBusy = false;
+        cabin.isOccupied = false;
     }
 }
