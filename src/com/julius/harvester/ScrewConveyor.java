@@ -18,12 +18,14 @@ class ScrewConveyor implements IScrewConveyor {
 
     @Override
     public void turnOn(){
-
+        isWorking = true;
+        System.out.println("The screw conveyor is now turned on.");
     }
 
     @Override
     public void turnOff() {
-
+        isWorking = false;
+        System.out.println("The screw conveyor is now turned off.");
     }
 
     @Override

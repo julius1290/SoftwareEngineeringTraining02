@@ -2,8 +2,8 @@ package com.julius.harvester;
 
 public class CornTank implements ICornTank{
 
-    int maximumVolume;
-    int fillLevel;
+    private int maximumVolume;
+    private int fillLevel;
 
     CornTank(int maximumVolume, int fillLevel){
         this.maximumVolume = maximumVolume;

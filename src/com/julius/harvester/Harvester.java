@@ -2,8 +2,8 @@ package com.julius.harvester;
 
 public class Harvester {
 
-    ICuttingSystem cuttingSystem;
-    IChassis chassis;
+    private ICuttingSystem cuttingSystem;
+    private IChassis chassis;
 
     Harvester(ICuttingSystem cuttingSystem, IChassis chassis){
         this.cuttingSystem = cuttingSystem;

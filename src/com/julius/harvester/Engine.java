@@ -2,7 +2,11 @@ package com.julius.harvester;
 
 public class Engine implements IEngine{
 
-    boolean isOn;
+    private boolean isOn;
+
+    Engine(){
+        isOn = false;
+    }
 
     @Override
     public void start() {

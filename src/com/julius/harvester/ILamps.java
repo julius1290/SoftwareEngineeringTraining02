@@ -4,5 +4,7 @@ interface ILamps {
 
     void turnOn();
     void turnOff();
-    void getIsLampOn();
+    boolean getIsLampOn();
+    LampType getLampType();
+    int getBrightness();
 }

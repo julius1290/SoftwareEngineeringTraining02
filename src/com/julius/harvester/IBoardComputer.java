@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.TreeMap;
 
 public interface IBoardComputer {
-    TreeMap getTreeMapFromHashMap(HashMap<IWheat, IPosition> wheatPositionHashMap);
-    void printTreeMap(TreeMap<IWheat, IPosition> wheatPositionTreeMap);
+    HashMap<Integer, IPosition> generateGrainPositionHashMap(HashMap<java.lang.Integer, IWheat> numberedWheatHashMap);
+    TreeMap generateTreeMapFromHashMap(HashMap<Integer, IPosition> wheatPositionHashMap);
+    void printTreeMap(TreeMap<Integer, IPosition> wheatPositionTreeMap);
 }

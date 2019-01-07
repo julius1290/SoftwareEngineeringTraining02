@@ -2,8 +2,8 @@ package com.julius.harvester;
 
 public class Driver implements IDriver{
 
-    int driverID;
-    boolean isBusy;
+    private int driverID;
+    private boolean isBusy;
 
     Driver(int driverID){
         this.driverID = driverID;
