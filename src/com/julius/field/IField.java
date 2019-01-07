@@ -1,4 +1,10 @@
 package com.julius.field;
 
- public interface IField {
+import java.util.Map;
+
+public interface IField {
+
+     int[][] getCornField();
+
+     Map<Integer,IWheat> getwheatMap();
 }

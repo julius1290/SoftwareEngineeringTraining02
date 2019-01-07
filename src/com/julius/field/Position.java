@@ -1,23 +1,24 @@
 package com.julius.field;
 
- class Position implements IPosition{
+ public class Position implements IPosition{
 
     private int xPos;
     private int yPos;
 
-    Position(int xPos, int yPos)
+    public Position(int xPos, int yPos)
     {
         this.xPos = xPos;
         this.yPos = yPos;
     }
 
     @Override
-    public void getXPos() {
-
+    public int getXPos() {
+        return xPos;
     }
 
     @Override
-    public void getYPos() {
-
+    public int getYPos() {
+        return yPos;
     }
+
 }
