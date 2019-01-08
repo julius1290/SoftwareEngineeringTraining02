@@ -19,7 +19,7 @@ public class Drone implements IDrone{
     public void generateWheatPositions() {
         int count =0;
         int[][] fieldArray = field.getCornField();
-        this.wheatMap = field.getwheatMap();
+        this.wheatMap = field.getWheatMap();
         for (int i = 0; i <= fieldArray.length; i++) {
             for (int j = 0; j<= fieldArray.length; j++) {
                 IWheat wheat = wheatMap.get(count);
@@ -29,5 +29,9 @@ public class Drone implements IDrone{
                 count++;
             }
         }
+    }
+
+    public Map<Integer, IWheat> getWheatMap(){
+        return wheatMap;
     }
 }

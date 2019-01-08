@@ -6,5 +6,5 @@ public interface IField {
 
      int[][] getCornField();
 
-     Map<Integer,IWheat> getwheatMap();
+     Map<Integer,IWheat> getWheatMap();
 }

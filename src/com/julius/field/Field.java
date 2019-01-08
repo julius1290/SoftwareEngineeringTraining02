@@ -1,20 +1,20 @@
 package com.julius.field;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
-class Field implements IField{
+public class Field implements IField{
 
     private int[][] cornField;
     private Map<Integer,IWheat> wheatMap = new HashMap<>();
 
-    Field(){
-        cornField = new int[1000][1000];
-        initalizeField();
+    public Field(){
+        //TODO set back to 1000x1000
+        cornField = new int[100][100];
+        initializeField();
     }
 
-    private void initalizeField() {
+    private void initializeField() {
         int count = 0;
         for (int i = 0; i <= cornField.length; i++){
             for (int j = 0; j <= cornField.length; j++){
@@ -32,7 +32,7 @@ class Field implements IField{
     }
 
     @Override
-    public Map<Integer,IWheat> getwheatMap() {
+    public Map<Integer,IWheat> getWheatMap() {
         return wheatMap;
     }
 }

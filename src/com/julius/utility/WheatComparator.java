@@ -4,11 +4,11 @@ import com.julius.field.IWheat;
 
 import java.util.Comparator;
 
-public class WheatComparator implements Comparator<IWheat> {
+public class WheatComparator implements Comparator<Integer> {
     @Override
-    public int compare(IWheat firstWheat, IWheat secondWheat) {
-        if(firstWheat.getNumberOfGrains() == (secondWheat.getNumberOfGrains())){
-            return 0;
+    public int compare(Integer firstWheat, Integer secondWheat) {
+        if(firstWheat.equals(secondWheat)){
+            return firstWheat;
         }
         return 0;
     }
