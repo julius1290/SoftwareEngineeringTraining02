@@ -2,15 +2,15 @@ package com.julius.utility;
 
 import java.util.Comparator;
 
-public class GrainComparator implements Comparator<Integer> {
+public class GrainComparator<Integer> implements Comparator<Integer> {
 
     @Override
     public int compare(Integer grain1, Integer grain2) {
-        if(grain1.equals(grain2)){
-            return grain2 - grain1;
-        }
-        else{
-            return grain1 - grain2;
-        }
+        //return grain1.compareTo(grain2);
+        int a = java.lang.Integer.parseInt(grain1.toString());
+        int b = java.lang.Integer.parseInt(grain2.toString());
+
+        return b - a;
     }
+
 }

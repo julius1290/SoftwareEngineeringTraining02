@@ -6,6 +6,8 @@ import com.julius.field.IField;
 import com.julius.field.IPosition;
 import com.julius.harvester.BoardComputer;
 import com.julius.harvester.IBoardComputer;
+import com.julius.utility.GrainComparator;
+import com.julius.utility.PositionComparator;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -18,10 +20,16 @@ public class BoardComputerTest {
         IField f = new Field();
         Drone d = new Drone(f);
         IBoardComputer boardComputer = new BoardComputer();
+
+        TreeMap<IPosition, Integer> positionSortedTreeMap = new TreeMap<>(new PositionComparator());
+        TreeMap<IPosition, Integer> grainSortedTreeMap = new TreeMap<>(new GrainComparator());
+
         d.generateWheatPositions();
         HashMap<IPosition, Integer> computerGeneratedHashMap = boardComputer.generateGrainPositionHashMap(d.getWheatMap());
-        TreeMap<IPosition, Integer> computerGeneratedTreeMap = boardComputer.generateTreeMapFromHashMap(computerGeneratedHashMap);
-        boardComputer.printTreeMap(computerGeneratedTreeMap);
+        boardComputer.generateTreeMapFromHashMap(positionSortedTreeMap, computerGeneratedHashMap);
+        boardComputer.printTreeMap(positionSortedTreeMap);
+        boardComputer.generateTreeMapFromHashMap(grainSortedTreeMap, computerGeneratedHashMap);
+        boardComputer.printTreeMap(grainSortedTreeMap);
     }
 
 }
