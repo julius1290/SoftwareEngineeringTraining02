@@ -19,8 +19,8 @@ public class BoardComputerTest {
         Drone d = new Drone(f);
         IBoardComputer boardComputer = new BoardComputer();
         d.generateWheatPositions();
-        HashMap<Integer, IPosition> computerGeneratedHashMap = boardComputer.generateGrainPositionHashMap(d.getWheatMap());
-        TreeMap<Integer, IPosition> computerGeneratedTreeMap = boardComputer.generateTreeMapFromHashMap(computerGeneratedHashMap);
+        HashMap<IPosition, Integer> computerGeneratedHashMap = boardComputer.generateGrainPositionHashMap(d.getWheatMap());
+        TreeMap<IPosition, Integer> computerGeneratedTreeMap = boardComputer.generateTreeMapFromHashMap(computerGeneratedHashMap);
         boardComputer.printTreeMap(computerGeneratedTreeMap);
     }
 
