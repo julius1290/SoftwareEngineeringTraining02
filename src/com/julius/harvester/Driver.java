@@ -23,4 +23,9 @@ public class Driver implements IDriver{
         cabin.isOccupied = false;
         System.out.println("The driver with the ID " + driverID + " left the cabin.");
     }
+
+    @Override
+    public boolean getStatus() {
+        return isBusy;
+    }
 }

@@ -19,4 +19,9 @@ public class Engine implements IEngine{
         isOn = false;
         System.out.println("The engine has stopped.");
     }
+
+    @Override
+    public boolean getStatus() {
+        return isOn;
+    }
 }

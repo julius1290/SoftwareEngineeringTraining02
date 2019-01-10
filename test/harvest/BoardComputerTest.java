@@ -28,11 +28,11 @@ public class BoardComputerTest {
         d.generateWheatPositions();
         HashMap<IPosition, Integer> computerGeneratedHashMap = boardComputer.generateGrainPositionHashMap(d.getWheatMap());
         boardComputer.generateTreeMapFromHashMap(positionSortedTreeMap, computerGeneratedHashMap);
-        boardComputer.printTreeMap(positionSortedTreeMap);
+        boardComputer.printMap(positionSortedTreeMap);
         //boardComputer.generateTreeMapFromHashMap(grainSortedTreeMap, computerGeneratedHashMap);
         HashMap<IPosition, Integer> grainSortedMap = val.sortMapByGrains(computerGeneratedHashMap);
-        boardComputer.printTreeMap(grainSortedMap);
-        //boardComputer.printTreeMap(grainSortedMap);
+        boardComputer.printMap(grainSortedMap);
+        //boardComputer.printMap(grainSortedMap);
     }
 
 }

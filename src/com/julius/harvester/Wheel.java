@@ -1,6 +1,11 @@
 package com.julius.harvester;
 
 public class Wheel {
-    int diameter;
-    WheelType wheelType;
+    private int diameter;
+    private WheelType wheelType;
+
+    Wheel(int diameter, WheelType wheelType){
+        this.diameter = diameter;
+        this.wheelType = wheelType;
+    }
 }

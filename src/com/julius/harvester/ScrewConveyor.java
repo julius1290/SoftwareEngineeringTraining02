@@ -15,7 +15,6 @@ class ScrewConveyor implements IScrewConveyor {
         this.volume = Math.PI * Math.pow(radius, 2) * length;
     }
 
-
     @Override
     public void turnOn(){
         isWorking = true;
@@ -31,5 +30,10 @@ class ScrewConveyor implements IScrewConveyor {
     @Override
     public void transportCorn() {
 
+    }
+
+    @Override
+    public boolean isWorking() {
+        return isWorking;
     }
 }

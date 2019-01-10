@@ -10,7 +10,6 @@ public class BoardComputer implements IBoardComputer{
 
     private HashMap<IPosition, Integer> grainPositionHashMap;
 
-    @SuppressWarnings("unchecked")
     public BoardComputer(){
         grainPositionHashMap = new HashMap<>();
     }
@@ -31,7 +30,7 @@ public class BoardComputer implements IBoardComputer{
 
 
     @Override
-    public void printTreeMap(Map<IPosition, Integer> sortedTreeMap){
+    public void printMap(Map<IPosition, Integer> sortedTreeMap){
         sortedTreeMap.forEach((key, value) -> System.out.println("Wheat on position: " + key.getXPos() + " " + key.getYPos() + " has " + value + " grains."));
     }
 }

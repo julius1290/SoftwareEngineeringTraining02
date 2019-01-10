@@ -10,5 +10,5 @@ import java.util.TreeMap;
 public interface IBoardComputer {
     HashMap<IPosition, Integer> generateGrainPositionHashMap(Map<Integer, IWheat> numberedWheatHashMap);
     TreeMap generateTreeMapFromHashMap(TreeMap<IPosition, Integer> sortedTreeMap, HashMap<IPosition, Integer> wheatPositionHashMap);
-    void printTreeMap(Map<IPosition, Integer> wheatPositionTreeMap);
+    void printMap(Map<IPosition, Integer> wheatPositionTreeMap);
 }
