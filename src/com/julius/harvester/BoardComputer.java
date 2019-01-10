@@ -31,7 +31,7 @@ public class BoardComputer implements IBoardComputer{
 
 
     @Override
-    public void printTreeMap(TreeMap<IPosition, Integer> sortedTreeMap){
+    public void printTreeMap(Map<IPosition, Integer> sortedTreeMap){
         sortedTreeMap.forEach((key, value) -> System.out.println("Wheat on position: " + key.getXPos() + " " + key.getYPos() + " has " + value + " grains."));
     }
 }
