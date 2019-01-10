@@ -20,4 +20,9 @@ public class Chassis implements IChassis{
         this.lamps = lamps;
         this.cabin = cabin;
     }
+
+    public ICabin getCabin() {
+        return cabin;
+    }
+
 }

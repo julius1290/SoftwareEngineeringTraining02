@@ -12,4 +12,8 @@ public class Cabin implements ICabin {
         this.boardComputer = boardComputer;
         this.driver = driver;
     }
+
+    public IBoardComputer getBoardComputer(){
+        return boardComputer;
+    }
 }

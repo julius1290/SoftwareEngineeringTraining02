@@ -10,4 +10,8 @@ public class Harvester implements IHarvester{
         this.cuttingSystem = cuttingSystem;
         this.chassis = chassis;
     }
+
+    public IChassis getChassis() {
+        return chassis;
+    }
 }
