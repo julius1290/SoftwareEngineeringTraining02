@@ -5,7 +5,7 @@ public class CornTank implements ICornTank{
     private int maximumVolume;
     private int fillLevel;
 
-    CornTank(int maximumVolume, int fillLevel){
+    public CornTank(int maximumVolume, int fillLevel){
         this.maximumVolume = maximumVolume;
         this.fillLevel = fillLevel;
     }

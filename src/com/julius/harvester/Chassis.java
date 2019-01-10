@@ -11,7 +11,7 @@ public class Chassis implements IChassis{
     ArrayList<ILamps> lamps;
     ICabin cabin;
 
-    Chassis(IEngine engine, ICornTank cornTank, IScrewConveyor screwConveyor, IFilter filter, ArrayList<IWheel> wheels, ArrayList<ILamps> lamps, ICabin cabin){
+    public Chassis(IEngine engine, ICornTank cornTank, IScrewConveyor screwConveyor, IFilter filter, ArrayList<IWheel> wheels, ArrayList<ILamps> lamps, ICabin cabin){
         this.engine = engine;
         this.cornTank = cornTank;
         this.screwConveyor = screwConveyor;

@@ -4,7 +4,7 @@ public class CuttingSystem implements ICuttingSystem{
     private int length;
     private int width;
 
-    CuttingSystem(int length, int width){
+    public CuttingSystem(int length, int width){
         this.length = length;
         this.width = width;
     }

@@ -5,7 +5,7 @@ public class Driver implements IDriver{
     private int driverID;
     private boolean isBusy;
 
-    Driver(int driverID){
+    public Driver(int driverID){
         this.driverID = driverID;
         isBusy = false;
     }

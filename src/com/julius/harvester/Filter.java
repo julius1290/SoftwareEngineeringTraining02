@@ -6,7 +6,7 @@ public class Filter implements IFilter{
 
     int maximumVolume;
 
-    Filter(int maximumVolume){
+    public Filter(int maximumVolume){
         this.maximumVolume = maximumVolume;
     }
 

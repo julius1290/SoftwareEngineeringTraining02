@@ -1,9 +1,15 @@
 package com.julius.harvester;
 
-public class Cabin {
-    boolean isOccupied;
+import com.julius.drone.IDrone;
 
-    Cabin(){
+public class Cabin implements ICabin {
+    boolean isOccupied;
+    private IBoardComputer boardComputer;
+    private IDriver driver;
+
+    public Cabin(IBoardComputer boardComputer, IDriver driver){
         isOccupied = false;
+        this.boardComputer = boardComputer;
+        this.driver = driver;
     }
 }

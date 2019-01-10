@@ -4,7 +4,7 @@ public class Engine implements IEngine{
 
     private boolean isOn;
 
-    Engine(){
+    public Engine(){
         isOn = false;
     }
 

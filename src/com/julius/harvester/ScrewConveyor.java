@@ -1,14 +1,14 @@
 package com.julius.harvester;
 import java.math.*;
 
-class ScrewConveyor implements IScrewConveyor {
+public class ScrewConveyor implements IScrewConveyor {
 
     private int length;
     private int radius;
     private double volume;
     private boolean isWorking;
 
-    ScrewConveyor (int length, int radius) {
+    public ScrewConveyor (int length, int radius) {
         this.length = length;
         this.radius = radius;
         isWorking = false;
